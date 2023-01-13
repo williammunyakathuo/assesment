@@ -1,0 +1,96 @@
+*{
+    color: white;
+    font-family: myFirstFont;
+}
+@font-face {
+    font-family: myFirstFont;
+    src: url(https://fonts.google.com/specimen/Rubik);
+  }
+body{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    background-color: hsl(226, 43%, 10%);
+}
+@media (max-width : 375px) {
+    body{
+        flex-wrap: wrap;
+        flex-direction: column;
+    }
+    .profile{
+        width: 230px;
+    }
+}
+.profile{
+    display: flex;
+    flex-direction: column;
+    background-color:hsl(235, 46%, 20%);
+    height: 400px;
+    width: 450px;
+    /* padding: 10px; */
+    border-radius: 10px;
+    margin: 20px;
+}
+h2{
+    font-size: 18px;
+}
+.info{
+    background-color: hsl(235, 45%, 61%);
+    height: 200px;
+    border: 10px;
+    padding: 10px;
+    border-radius: 10px;
+}
+.timeline{
+    margin : 20px;
+    
+}
+li{
+    list-style: none;
+}
+.card{
+   /* background-color: hsl(15, 100%, 70%); */
+   width: 230px;
+   padding-bottom: 0%;
+   border-radius: 10px;
+   display: flex;
+   flex-direction: column;
+
+}
+.content{
+    background-color: hsl(235, 46%, 20%);
+    margin-bottom: 0%;
+    border-radius: 10px;
+}
+.cards{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+.card img{
+    height: 50px;
+    width: 50px;
+    align-self: flex-end;
+
+}
+#work{
+    background-color:  hsl(15, 100%, 70%);
+}
+#play{
+    background-color: hsl(195, 74%, 62%);
+}
+#study{
+    background-color: hsl(348, 100%, 68%);
+}
+#exercise{
+    background-color:  hsl(145, 58%, 55%);
+}
+#social{
+    background-color: hsl(264, 64%, 52%);
+}
+#selfcare{
+    background-color: hsl(43, 84%, 65%);
+}
